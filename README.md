@@ -36,7 +36,7 @@ O sistema opera através da integração de três componentes:
    rasa run actions
 
 3. Treinamento e Execução do Chat (Terminal 2):
-   rasa train
+   rasa train /
    rasa shell
 
 ## Entidades e Fluxo de Dados
