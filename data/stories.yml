@@ -1,0 +1,10 @@
+version: "3.1"
+
+stories:
+- story: fluxo de suporte basico
+  steps:
+  - intent: cumprimentar
+  - action: utter_cumprimentar
+  - intent: informar_problema
+  - action: utter_escaneando
+  - action: action_fornecer_suporte

@@ -1,0 +1,18 @@
+version: "3.1"
+
+rules:
+
+- rule: Despedida padrão
+  steps:
+  - intent: despedir
+  - action: utter_despedida
+
+- rule: Responder que é um robô (Challenge)
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Encaminhamento direto para humano (Fallback)
+  steps:
+  - intent: nlu_fallback
+  - action: action_fornecer_suporte

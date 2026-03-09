@@ -1,0 +1,29 @@
+version: "3.1"
+
+intents:
+  - cumprimentar
+  - informar_problema
+  - despedir
+  - bot_challenge
+
+entities:
+  - problema
+
+# Slot para manter na memória do bot
+slots:
+  problema:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: problema
+
+responses:
+  utter_despedida:
+    - text: "O Som na Nuvem agradece o contato. Tenha um ótimo dia!"
+  
+  utter_iamabot:
+    - text: "Eu sou o assistente virtual do Som na Nuvem, especializado em suporte técnico."
+
+actions:
+  - action_fornecer_suporte

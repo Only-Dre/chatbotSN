@@ -1,0 +1,21 @@
+version: "3.1"
+
+# Saudação
+nlu:
+- intent: cumprimentar
+  examples: |
+    - Olá
+    - Bom dia
+    - Oi
+    - Hey
+
+#Intenções
+- intent: informar_problema
+  examples: |
+    - Não consigo [acessar minha conta](problema)
+    - Estou com [problemas de login](problema)
+    - Quero [mudar meu plano](problema)
+    - Gostaria de ver as [opções de assinatura](problema)
+    - O [aplicativo não funciona](problema)
+    - O [app está travando](problema)
+    - Erro técnico no [player](problema)
